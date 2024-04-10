@@ -142,13 +142,21 @@ const VariantPage = () => {
         </Box>
         <Box sx={{ display: "flex", gap: "15px" }}>
           <Button
-            variant="outlined"
+          sx={{
+            color: "white",
+            backgroundColor: "black"
+          }}
+          variant="outlined"
             startIcon={<Add />}
             onClick={handleAddVariant}
           >
             Add Variants
           </Button>
-          <Button variant="contained" component="span">
+          <Button sx={{
+            color: "white",
+            backgroundColor: "black"
+
+          }} variant="contained" component="span">
             SAVE
           </Button>
         </Box>
@@ -158,7 +166,7 @@ const VariantPage = () => {
       >
         <TableContainer>
           <Table>
-            <TableHead sx={{ bgcolor: "#EBF1FDE5" }}>
+            <TableHead sx={{ bgcolor: "#0001"}}>
               <TableRow>
                 <TableCell>VARIANT</TableCell>
                 <TableCell>VALUE</TableCell>

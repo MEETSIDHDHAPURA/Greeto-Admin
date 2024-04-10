@@ -96,6 +96,7 @@ const Customize = () => {
             </Box>
             <Box sx={{ display: "flex", gap: "15px" }}>
               <Button
+              sx={{color: "white", backgroundColor: "black"}}
                 startIcon={<Add />}
                 variant="outlined"
                 onClick={handleDialogOpen}
@@ -103,7 +104,7 @@ const Customize = () => {
                 Add Customisation
               </Button>
 
-              <Button variant="contained">save</Button>
+              <Button sx={{color: "white", backgroundColor: "black"}} variant="contained">save</Button>
             </Box>
           </Box>
 
@@ -209,7 +210,7 @@ const Customize = () => {
           </Box>
         </DialogContent>
         <DialogActions>
-          <Button onClick={handleDialogClose} color="primary">
+          <Button sx={{color: "white", backgroundColor: "black"}} onClick={handleDialogClose} color="primary">
             Cancel
           </Button>
         </DialogActions>

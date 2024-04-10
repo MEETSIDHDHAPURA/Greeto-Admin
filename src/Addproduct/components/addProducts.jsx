@@ -17,7 +17,7 @@ const AddProduct = () => {
   };
   return (
     <>
-      <Box sx={{ padding: "30px" }}  width={"1250px"}>
+      <Box sx={{ padding: "30px" }} width={"1250px"}>
         <Box sx={{ display: "flex", justifyContent: "space-between" }}>
           <Typography
             sx={{ fontSize: "32px", fontWeight: "bold" }}
@@ -25,10 +25,10 @@ const AddProduct = () => {
             Add Products
           </Typography>
           <Box sx={{ marginRight: "20px" }}>
-            <Button sx={{ mx: "15px" }} variant="outlined">
+            <Button sx={{ mx: "15px", color: "white", backgroundColor: "black" }} variant="outlined">
               Cancel
             </Button>
-            <Button variant="contained">Save</Button>
+            <Button sx={{ color: "white", backgroundColor: "black" }} variant="contained">Save</Button>
           </Box>
         </Box>
         <Box sx={{ width: "100%", typography: "body1", mt: "10px" }}>
@@ -45,16 +45,16 @@ const AddProduct = () => {
                 <Tab label="shipping" value="4" />
               </TabList>
             </Box>
-            <TabPanel sx={{p:0,pt:2}} value="1">
+            <TabPanel sx={{ p: 0, pt: 2 }} value="1">
               <General />
             </TabPanel>
-            <TabPanel sx={{p:0,pt:2}} value="2">
+            <TabPanel sx={{ p: 0, pt: 2 }} value="2">
               <VariantPage />
             </TabPanel>
-            <TabPanel sx={{p:0,pt:2}} value="3">
+            <TabPanel sx={{ p: 0, pt: 2 }} value="3">
               <Customize />
             </TabPanel>
-            <TabPanel sx={{p:0,pt:2}} value="4">
+            <TabPanel sx={{ p: 0, pt: 2 }} value="4">
               <Shipping />
             </TabPanel>
           </TabContext>
