@@ -11,8 +11,6 @@ const Heading = ({ title, extraElements }) => {
         px={4}
         justifyContent={"space-between"}
         alignItems={"center"}
-        // borderBottom={"1px solid"}
-        // borderColor={alpha("#000000", 0.2)}
       >
         <Typography variant="h5" fontWeight={"600"}>
           {title}
